@@ -1,8 +1,16 @@
-﻿function XiaoXiaoLe(canvasId, imgspath, scorechange, gameendcalback, timedowncalback) {
+﻿function XiaoXiaoLe(canvasId, imgspath, options, scorechange, gameendcalback, timedowncalback) {
     var _this = this;
     var w = 600, h = 500, boxsize = 100;
     var wi = 6, hi = 5;
     var classnum = 5;
+
+    wi = options.col || wi;
+    hi = options.row || hi;
+    boxsize = options.boxsize || boxsize;
+
+    w = wi * boxsize;
+    h = hi * boxsize;
+
     var score = 0;
 
     var gameend = false;

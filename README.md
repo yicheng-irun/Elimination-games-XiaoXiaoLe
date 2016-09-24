@@ -15,6 +15,15 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
 >Example "hint()":<br>
 ![demo1](https://raw.githubusercontent.com/yicheng-irun/Elimination-games-XiaoXiaoLe/master/assets/demo2.png)
 
+>Example [col&row]:<br>
+>```Javascript
+>{
+>    col:20,  //set 20 columns
+>    row:16,  //set 16 rows
+>}
+>```
+>![demo1](https://raw.githubusercontent.com/yicheng-irun/Elimination-games-XiaoXiaoLe/master/assets/demo3.png)
+
 
 ## usage:
 ```HTML
@@ -27,7 +36,10 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
 <script src="res/hammer.min.js"></script>
 <script src="xiaoxiaole.js"></script>
 <script>
-    var xxl = new XiaoXiaoLe("js-game", "img",
+    var xxl = new XiaoXiaoLe("js-game", "img" ,{
+            col:6,  //6 columns
+            row:5,  //5 rows
+        },
         function (score) {  //score changed calback
             $("#js-score-num").text(score)
         }, 
@@ -45,3 +57,15 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
     xxl.hint();
 </script>
 ```
+
+<br>
+
+## I need you to give me the stars
+
+> <br>
+> 如果你觉得这个代码例子不错的话，请给这个项目加星星吧<br>
+> 给我星星，给我动力，让这个项目变得更好<br>
+> <br>
+
+<br>
+<br>

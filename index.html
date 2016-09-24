@@ -35,16 +35,16 @@
     <script src="xiaoxiaole.js"></script>
     <script type="text/javascript">
 
-        var xxl = new XiaoXiaoLe("js-game", "img",
-            function (score) {  //score changed calback
+        var xxl = new XiaoXiaoLe("js-game", "img",{
+            col:6,  //6 columns
+            row:5,  //5 rows
+        },function (score) {  //score changed calback
             $("#js-score-num").text(score)
         }, function (score) {   //game end calback
             alert("gameover!!,You get " + score + " points");
         }, function (time) {
             $("#js-time-down").text(time)
         });
-
-        
 
         $("#js-start").click(function () {
             xxl.start();
