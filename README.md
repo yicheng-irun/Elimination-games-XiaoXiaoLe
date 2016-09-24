@@ -1,6 +1,11 @@
 # Elimination-games-XiaoXiaoLe
 Based on the HTML,Javascript elimination games 。Use the createjs framework
 
+-------------
+
+## -> [view online demo](https://yicheng-irun.github.io/Elimination-games-XiaoXiaoLe/)
+
+--------------
 
 ## screenshot:
 
