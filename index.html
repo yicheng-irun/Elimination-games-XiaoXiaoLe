@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>XiaoXiaoLe</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="res/index.css" />
+    
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="score">
+            <button id="js-start">start</button>
+            <button id="js-hint">hint</button>
+            <button id="js-chint">close hint</button>
+            <div class="score-num">score:<span id="js-score-num">0</span></div>
+            <div class="score-time">time left:<span id="js-time-down">00:00</span></div>
+        </div>
+        <div class="game-container">
+            <canvas id="js-game-bg" width="300" height="250" class="game-bg-canvas"></canvas>
+            <canvas id="js-game" width="300" height="250" class="gamecanvas"></canvas>
+        </div>
+        
+    </div>
+
+    <script src="res/zepto.min.1.1.6.js"></script>
+    <script src="res/easeljs-0.8.2.min.js"></script>
+    <script src="res/tweenjs-0.6.2.min.js"></script>
+    <script src="res/hammer.min.js"></script>
+    <script src="xiaoxiaole.js"></script>
+    <script type="text/javascript">
+
+        var xxl = new XiaoXiaoLe("js-game", "js-game-bg", "img",
+            function (score) {  //score changed calback
+            $("#js-score-num").text(score)
+        }, function (score) {   //game end calback
+            alert("游戏结束,你获得" + score + "分");
+        }, function (time) {
+            $("#js-time-down").text(time)
+        });
+
+        
+
+        $("#js-start").click(function () {
+            xxl.start();
+        })
+        $("#js-hint").click(function () {
+            xxl.hint();
+        })
+        $("#js-chint").click(function () {
+            xxl.closeHint();
+        })
+
+    </script>
+
+</body>
+</html>

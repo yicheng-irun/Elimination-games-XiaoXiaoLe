@@ -1,0 +1,91 @@
+html {
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6dbe7c;
+}
+
+div.main {
+    margin: 0 auto;
+    padding: 0 10px 30px 10px;
+    max-width: 500px;
+    /* background-color: #61C793; */
+    /* line-height: 0; */
+    position: relative;
+}
+
+div.score {
+    /* position: absolute; */
+    z-index: 1001;
+    width: 100%;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    height: 130px;
+}
+
+    div.score > button {
+        margin: 30px 0 0 0;
+        padding: 6px 27px;
+        color: #fff;
+        background-color: #D44A7B;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+        div.score > button:active {
+            background-color: #A92453;
+        }
+
+.game-container {
+    position: relative;
+}
+
+canvas.gamecanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-radius: 0px;
+    cursor: default;
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00130B inset;
+}
+
+canvas.game-bg-canvas {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    background-color: #00311c;
+    border-radius: 4px;
+    cursor: default;
+    z-index: 1; /* display: none; */
+}
+
+
+
+
+.score-time {
+    font-size: 12px;color: #fff;
+}
+
+.score-num {
+    font-size: 12px;
+    color: #fff;
+    line-height: 0;
+    padding: 20px 0 20px 0;
+}
+
+    .score-num > span {
+        font-size: 29px;
+        vertical-align: bottom;
+        padding: 0 10px;
+    }
+
