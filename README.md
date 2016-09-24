@@ -5,8 +5,7 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
 ## screenshot:
 
 >demo1:<br>
-![demo1]("https://github.com/yicheng-irun/Elimination-games-XiaoXiaoLe/raw/trank/assets/demo1.png")
-
+![demo1]("https://raw.githubusercontent.com/yicheng-irun/Elimination-games-XiaoXiaoLe/master/assets/demo1.png")
 
 
 
