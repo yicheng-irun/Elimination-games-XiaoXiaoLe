@@ -14,7 +14,6 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
 ## usage:
 ```HTML
 <div class="game-container">
-    <canvas id="js-game-bg" width="300" height="250" class="game-bg-canvas"></canvas>
     <canvas id="js-game" width="300" height="250" class="gamecanvas"></canvas>
 </div>
 <script src="res/zepto.min.1.1.6.js"></script>
@@ -23,7 +22,7 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
 <script src="res/hammer.min.js"></script>
 <script src="xiaoxiaole.js"></script>
 <script>
-    var xxl = new XiaoXiaoLe("js-game", "js-game-bg", "img",
+    var xxl = new XiaoXiaoLe("js-game", "img",
         function (score) {  //score changed calback
             $("#js-score-num").text(score)
         }, 

@@ -1,4 +1,4 @@
-﻿function XiaoXiaoLe(canvasId, bgcanvasId, imgspath, scorechange, gameendcalback, timedowncalback) {
+﻿function XiaoXiaoLe(canvasId, imgspath, scorechange, gameendcalback, timedowncalback) {
     var _this = this;
     var w = 600, h = 500, boxsize = 100;
     var wi = 6, hi = 5;
@@ -20,9 +20,9 @@
     var canxiao = null;
 
     function preparebackground() {  //绘制背景
-        var bgcanvas = document.getElementById(bgcanvasId)
-        bgcanvas.height = h;
-        bgcanvas.width = w;
+        //var bgcanvas = document.getElementById(bgcanvasId)
+        //bgcanvas.height = h;
+        //bgcanvas.width = w;
 
         //绘制背景
         var bggrid = new createjs.Shape();
@@ -33,10 +33,11 @@
                 bgg.rect(x, y, boxsize, boxsize);
             }
         }
+        bggrid.cache(0,0,w,h)
         this.stage.addChild(bggrid)
-        this.stage.update();
-        bgcanvas.getContext("2d").drawImage(this.canvas, 0, 0, w, h)
-        this.stage.removeChild(bggrid);
+        //this.stage.update();
+        //bgcanvas.getContext("2d").drawImage(this.canvas, 0, 0, w, h)
+        //this.stage.removeChild(bggrid);
     }
     function loadimg() {    //加载图片
         for (var i = 0; i < classnum; i++) {
@@ -679,10 +680,10 @@
         this.stage = new createjs.Stage(this.canvas);
         this.stage.autoClear = true;
 
-        this.stage.addChild(icocontainer);
-
         //绘制完背景
         preparebackground.bind(this)();
+
+        this.stage.addChild(icocontainer);
         loadimg();
         prepareScene.bind(this)();
         addEvent.bind(this)();

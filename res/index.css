@@ -53,24 +53,12 @@ canvas.gamecanvas {
     width: 100%;
     z-index: 10;
     border-radius: 0px;
+    background-color: #00311c;
     cursor: default;
     z-index: 2;
     border-radius: 5px;
     box-shadow: 0 0 10px #00130B inset;
 }
-
-canvas.game-bg-canvas {
-    position: relative;
-    width: 100%;
-    z-index: 10;
-    background-color: #00311c;
-    border-radius: 4px;
-    cursor: default;
-    z-index: 1; /* display: none; */
-}
-
-
-
 
 .score-time {
     font-size: 12px;color: #fff;
