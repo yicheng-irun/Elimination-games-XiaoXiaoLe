@@ -60,12 +60,7 @@ Based on the HTML,Javascript elimination games 。Use the createjs framework
 
 <br>
 
-## I need you to give me the stars
 
-> <br>
-> 如果你觉得这个代码例子不错的话，请给这个项目加星星吧<br>
-> 给我星星，给我动力，让这个项目变得更好<br>
-> <br>
 
 <br>
 <br>
