@@ -1,5 +1,5 @@
 # Elimination-games-XiaoXiaoLe
-Based on the HTML,Javascript elimination games 。Use the createjs framework
+A Elimination games based on the HTML,Javascript。Used the createjs framework。
 
 -------------
 
